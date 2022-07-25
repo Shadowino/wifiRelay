@@ -1,0 +1,14 @@
+список таблиц и полей для БД
+ таблица статистики
+	id | mark | relay1 | relay2 | sensor1 | sensor2 | sensor3 | time
+
+ таблица статистики
+	id | date | msg | mark | relay1 | relay2 | sensor1 | sensor2 | sensor3
+	id - primary
+	date - date&time
+	msg - number msg - long int
+	mark - id module - string
+	relay1, relay2 - status relays - int
+	sensor1/2/3 - sensor1/2/3 value - int
+	
+	

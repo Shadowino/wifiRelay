@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -13,5 +13,6 @@
         This is the master sidebar.
     @show
     <!-- @include('header') -->
+Главная страница 
   </body>
 </html>
