@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\module;
+use App\Http\Controllers\moduleController;
 use App\Http\Controllers\StatController;
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +19,5 @@ use App\Http\Controllers\StatController;
 //     return $request->user();
 // });
 
-Route::resource('module', module::class);
+Route::resource('module', moduleController::class);
 Route::resource('log', StatController::class);

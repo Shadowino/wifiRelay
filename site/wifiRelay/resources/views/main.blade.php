@@ -11,5 +11,8 @@
 <body>
   @include('header')
   <a href="#">google</a>
+  <?php
+  echo date('Y-m-d h:i:s');
+  ?>
 </body>
 </html>
