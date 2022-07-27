@@ -26,7 +26,6 @@ class StatController extends Controller
   // post log
   public function store(Request $request)
   {
-    // post /log?msg=i&mark=0&relay1=0&relay2=0&temp=40.2&light=512&sens=1020
     stat::insert([
       'date' => date('Y-m-d h:i:s'),
       'msg' => $request->input('msg'),

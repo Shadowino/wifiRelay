@@ -1,0 +1,29 @@
+#relay1,#relay2,#relay3,#relay4
+{
+  display:inline-block;
+}
+.size
+{
+  width:150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+th
+{
+  background-color:#a87b7b;
+  color: black;
+}
+input{
+  display: inline-block;
+}
+form{background: gray}
+body {margin:0;}
+input{
+  /* width: 90%; */
+  height: 20px;
+}
+table {
+  width: 100%;
+  height: 40px;
+}
