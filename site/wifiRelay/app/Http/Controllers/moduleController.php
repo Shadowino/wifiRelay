@@ -49,7 +49,7 @@ class moduleController extends Controller
   // api/module/create
   public function create()
   {
-    echo "module/create - page <br>";
+    return view('create-module');
     // return view(); // форма для создания нового модуля (делает ваня)
   }
 
@@ -57,7 +57,7 @@ class moduleController extends Controller
   // api/module/{}/edit
   public function edit($id)
   {
-    echo"module/$id/edit - page <br>";
+    return view('edit-module');
     // return view() //страница редактор модуля  (делает ваня)
   }
 }
