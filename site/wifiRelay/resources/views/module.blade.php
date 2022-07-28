@@ -8,6 +8,9 @@
 <body>
   @include('header')
   <style media="screen">
+  body{
+    background-color: green;
+  }
   .inp{
     width: 80px;
     height: 20px;
