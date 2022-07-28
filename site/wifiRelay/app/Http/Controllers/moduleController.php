@@ -17,7 +17,12 @@ class moduleController extends Controller
 
   // api функция для добавления модуля в базу
   public function store(Request $request){
-    return '// WARNING: module not added!'; // нЕчего возвращать..
+    $id = module::insertGetId([
+        'name' => $request->input('name'),
+        'mode' => $request->input('mode')
+    ]);
+    if ($request->has('note')) return $this->show($id);
+    return $id; // id добавленного модуля
   }
 
   // GET /module/{id}
@@ -26,15 +31,17 @@ class moduleController extends Controller
   }
 
   // put /module/{id}
-  public function update(Request $request, $id)
-  {
-    return '// WARNING: module not updated!'; // нЕчего возвращать..
-  }
+  public function update(Request $request, $id){
+    module::where('id', $id)->update([
+        'name' => $request->input('name'),
+        'mode' => $request->input('mode')
+    ]);
+    if ($request->has('note')) return $this->show($id);
+    return $id; // id обновленного модуля  }
 
   // DELETE /module/{id}
-  public function destroy($id)
-  {
-    return '// WARNING: module not deleted!'; // нЕчего возвращать..
+  public function destroy($id){
+    return module::where('id', $id)->delete();
   }
   // функции с web interfaces
 
@@ -42,7 +49,7 @@ class moduleController extends Controller
   // api/module/create
   public function create()
   {
-    echo "module/create - page <br> ";
+    echo "module/create - page <br>";
     // return view(); // форма для создания нового модуля (делает ваня)
   }
 
