@@ -1,0 +1,12 @@
+@font-face {
+// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+font-family: "Staatliches-Regular";
+// адрес шрифта и тип
+src: url("/fonts/Staatliches-Regular.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+h1{
+font-family: "RalewayRegular";
+}
+
+}
